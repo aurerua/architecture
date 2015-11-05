@@ -1,22 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
+
 <head>
 
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Supposedly required here for bootstrap <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 
-  <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
+  <title>
+    <?php echo $site->title()->html() ?> |
+    <?php echo $page->title()->html() ?></title>
   <meta name="description" content="<?php echo $site->description()->html() ?>">
   <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 
-  <?php echo css('assets/css/main.css') ?>
 
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <!--<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />-->
+  <script type="text/javascript">
+    (function() {
+      var path = '//easy.myfonts.net/v2/js?sid=148510(font-family=Proxima+Nova+Regular)&sid=148547(font-family=Proxima+Nova+SemiBold)&sid=148550(font-family=Proxima+Nova+Light)&sid=270169(font-family=Proxima+Nova+Medium)&key=qH0NHpdka5',
+        protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+        trial = document.createElement('script');
+      trial.type = 'text/javascript';
+      trial.async = true;
+      trial.src = protocol + path;
+      var head = document.getElementsByTagName("head")[0];
+      head.appendChild(trial);
+    })();
+  </script>
+  <script type="text/javascript">
+    (function() {
+      var path = '//easy.myfonts.net/v2/js?sid=173679(font-family=PF+Din+Text+Pro+Thin)&sid=173743(font-family=PF+Din+Text+Pro+Regular)&sid=173744(font-family=PF+Din+Text+Pro+Medium)&sid=173780(font-family=PF+Din+Text+Pro+Light)&key=9mnMplfvyE',
+        protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+        trial = document.createElement('script');
+      trial.type = 'text/javascript';
+      trial.async = true;
+      trial.src = protocol + path;
+      var head = document.getElementsByTagName("head")[0];
+      head.appendChild(trial);
+    })();
+  </script>
+  <!-- Bootstrap -->
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <?php echo css( 'assets/css/bootstrap.min.css') ?>
+  <?php echo css( 'assets/css/main.css') ?>
 </head>
-<body>
 
-  <header class="header cf" role="banner">
-    <a class="logo" href="<?php echo url() ?>">
-      <img src="<?php echo url('assets/images/logo.svg') ?>" alt="<?php echo $site->title()->html() ?>" />
-    </a>
-    <?php snippet('menu') ?>
-  </header>
+<body class="nav-closed">
+
+  <div class="main-header" style="background-image: url(<?php echo url('assets/images/cover.jpg') ?>)"></div>
+  <!--<div class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}"></div>-->

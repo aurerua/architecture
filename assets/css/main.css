@@ -1,335 +1,388 @@
+/* ==========================================================================
+   Table of Contents
+   ========================================================================== */
+
 /*
 
-Kirby Starterkit
-
-Author: Bastian Allgeier / Sascha Lack
-URL:    http://getkirby.com
-Email:  support@getkirby.com
+    0.  Normalize
+    1.  Icons
+    2.  General
+    3.  Utilities
+    4.  General
+    5.  Single Post
+    6.  Tag Archive
+    7.  Read Next
+    8.  Third Party Elements
+    9.  Pagination
+    10.  Footer
+    11. Media Queries (Tablet)
+    12. Media Queries (Mobile)
+    13. Animations
 
 */
 
+/* ==========================================================================
+   0. Normalize.css v2.1.3 | MIT License | git.io/normalize | (minified)
+   ========================================================================== */
 
-/* Source Sans Pro
--------------------------------------------------- */
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 300;
-  src: url(../fonts/sourcesanspro-300.woff) format('woff');
-}
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/sourcesanspro-400.woff) format('woff');
-}
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  font-weight: 600;
-  src: url(../fonts/sourcesanspro-600.woff) format('woff');
-}
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-style: italic;
-  font-weight: 400;
-  src: url(../fonts/sourcesanspro-400-italic.woff) format('woff');
-}
-
-
-/* Reset
--------------------------------------------------- */
-*, *:before, *:after {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-article, aside, details, figcaption, figure,
-footer, header, hgroup, main, nav, section, summary {
-  display: block;
-}
-
-
-/* Pix
--------------------------------------------------- */
-img {
-  display: block;
-  max-width: 100%;
-}
-
-
-/* Links
--------------------------------------------------- */
-a {
-  color: #000;
-  text-decoration: none;
-  transition: color .3s, background .3s, border .3s;
-}
-a:hover {
-  color: red;
-}
-
-
-/* Clearfix
--------------------------------------------------- */
-.cf:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-/* Site
--------------------------------------------------- */
+article, aside, details,
+figcaption, figure,
+footer, header, hgroup,
+main, nav, section,
+summary { display: block; }
+audio, canvas, video { display: inline-block; }
+audio:not([controls]) { display: none; height: 0; }
+[hidden], template { display: none; }
 html {
-  height: 101%;
-  font-family: "Source Sans Pro", sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+   font-family: sans-serif;
+   -ms-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
 }
-body {
-  margin: 0 auto;
-  font-size: 1.25em;
-  line-height: 1.5em;
-  padding: 1.5em;
-  max-width: 50em;
-  background: #fff;
-  color: #222;
+body { margin: 0; }
+a { background: transparent; }
+a:focus { outline: thin dotted; }
+a:active, a:hover { outline: 0; }
+h1 { font-size: 2em; margin: 0.67em 0; }
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: 700; }
+dfn { font-style: italic; }
+hr {
+   -moz-box-sizing: content-box;
+   box-sizing: content-box;
+   height: 0;
 }
+mark { background: #FF0; color: #000; }
+code, kbd, pre,
+samp { font-family: monospace, serif; font-size: 1em; }
+pre { white-space: pre-wrap; }
+q { quotes: "\201C" "\201D" "\2018" "\2019"; }
+small { font-size: 80%; }
+sub, sup {
+   font-size: 75%;
+   line-height: 0;
+   position: relative;
+   vertical-align: baseline;
+}
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+img { border: 0; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+fieldset {
+   border: 1px solid #c0c0c0;
+   margin: 0 2px;
+   padding: 0.35em 0.625em 0.75em;
+}
+legend { border: 0; padding: 0; }
+button, input, select,
+textarea { font-family: inherit; font-size: 100%; margin: 0; }
+button, input { line-height: normal; }
+button, select { text-transform: none; }
+button, html input[type="button"],
+input[type="reset"], input[type="submit"] {
+   -webkit-appearance: button;
+   cursor: pointer;
+}
+button[disabled], html input[disabled] { cursor: default; }
+input[type="checkbox"],
+input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="search"] {
+   -webkit-appearance: textfield;
+   -moz-box-sizing: content-box;
+   -webkit-box-sizing: content-box;
+   box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+button::-moz-focus-inner,
+input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* ==========================================================================
+   1. Fonts and colors
+   ========================================================================== */
+/*font-family: 'Proxima Nova Regular'*/
+/*font-family: 'Proxima Nova SemiBold'*/
+/*font-family: 'Proxima Nova Light'*/
+/*font-family: 'Proxima Nova Medium'*/
+/*font-family: 'PF Din Text Pro Regular'*/
+/*font-family: 'PF Din Text Pro Medium'*/
+/*font-family: 'PF Din Text Pro Light'*/
+/*font-family: 'PF Din Text Pro Thin'*/
+/* Tips: http://stackoverflow.com/questions/18740757/using-a-different-font-with-twitter-bootstrap */
 
 
-/* Header
--------------------------------------------------- */
-.header {
-  border-bottom: 2px solid red;
-  margin-bottom: 1.5em;
-}
-.logo {
-  display: block;
-  margin-bottom: 1.5em;
-}
-.logo img {
-  width: 2em;
-}
+/* Blue: #4D5377 */
+/* Gray1: #B9B6AE */
+/* Gray2: #B6AC93 */
+/* Gray2.2: #8C8677 */
+/* Black1: #39373C */
+/* Black2: #060307 */
+
+/* ==========================================================================
+   2. Base rules
+   ========================================================================== */
+html, body  { height: 100%; color:#8C8677;}
+html { font-family: 'Proxima Nova Regular', sans-serif; }
+h1 { margin: 0; font-family: 'PF Din Text Pro Regular', sans-serif; color: #4D5377;}
+h2, h3, h4, h5, h6 { font-family: 'Proxima Nova Regular', sans-serif; }
+h2 { font-size: 1em; margin: 0; }
+p, div, a { font-family: 'Proxima Nova Regular', sans-serif; }
+footer { display:none; }
+section { text-align: justify; }
 
 
-/* Navigation
--------------------------------------------------- */
-.menu a {
-  display: block;
-  color: #222;
-}
-.menu a:hover {
-  color: red;
-  text-decoration: none;
-}
-.menu .active {
-  color: red;
-}
-.menu li {
-  list-style: none;
-}
-.menu > li {
-  position: relative;
-}
-.menu > li > a {
-  padding: .35em 0;
-  border-top: 1px solid #ddd;
-  font-weight: 600;
+/* ==========================================================================
+   3. Heading
+   ========================================================================== */
+/* Big cover image on the home page */
+.main-header {
+    position: relative;
+    width: 100%;
+    height: 33.333333%;
+    background: #222 no-repeat center center;
+    background-size: cover;
 }
 
-.submenu {
-  position: absolute;
-  z-index: 1;
-  display: none;
-  left: 1em;
-}
-.submenu:before {
-  position: absolute;
-  z-index: -1;
-  content: '';
-  top: -.5em;
-  left: 0;
-  border-top: .5em solid transparent;
-  border-bottom: .5em solid transparent;
-  border-left: .5em solid #222;
-}
-.submenu li {
-  border-bottom: 1px solid #444;
-}
-.submenu a {
-  padding: .5em 1.5em;
-  font-size: .9em;
-  font-weight: 300;
-  color: #fff;
-  background: #222;
-  white-space: nowrap;
-}
-.submenu a:hover {
-  background: #333;
-  color: #fff;
+/* ==========================================================================
+   4. Navbar
+   ========================================================================== */
+/* Purpose: Make the text of first and last elements in the right part of the */
+/* navbar in line with the width of the last column. */
+
+/* Information: */
+/* Width of bootstrap container (@container-large-desktop): */
+/*     (1140px + @grid-gutter-width) = 1140px +30px = 1170px  */
+/* Width of a column with custom gutter-width of 60 px:*/
+/*     (1170 - 2*60)/3 = 350px */
+
+/* Problem: Bootstrap interferes with a common way to position 3 divs with */ 
+/* one left floated, one centered and one right floated. (apply */
+/* "text-align: center;" to ul element and add "display:inline-block" to the */
+/* list items. Then float the first li left and the last li right.) */
+/* The solution used below requires the centered element to come last in the */
+/* markup. */
+
+/*.navbar-right > li > a {
+    color: #8C8677;
 }
 
-@media screen and (min-width: 40em) {
-  body {
-    padding: 3em;
-  }
-  .logo {
-    float: left;
-  }
-  .menu {
+.navbar-right > li > a:hover, .navbar-right > li > a:focus, .navbar-right > .active > a {
+    color: #4D5377;
+}
+*/
+.navbar-right > .active > a {
+    color: #4D5377;
+}
+
+a {
+    color: #8C8677;
+}
+
+a:hover, a:focus {
+    color: #4D5377;
+    text-decoration: none;
+}
+
+#custom-navbar .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar h1 { font-size: 1em;}
+
+.navbar.navbar-custom {
+    margin-top: 0.75em;
+    margin-bottom: 2.5em;
+}
+
+.navbar-custom a.navbar-brand { font-size: 2.5rem; }
+
+.navbar-right { width: 350px; }
+
+.navbar-right li {
     float: right;
-    margin-right: -1em;
-  }
-  .menu > li {
+    z-index: 5;
+    width: 33%;
+    text-align: right;
+}
+
+.navbar-right li:first-child {
     float: left;
-  }
-  .menu > li > a {
-    padding: .35em 1em;
-    border: 0;
-  }
-  .menu > li:hover .submenu {
-    display: block;
-  }
+    text-align: left;
+}
+
+.navbar-right li:last-child {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    z-index: 0;
+    text-align: center;
+}
+
+.navbar-right li,  .navbar-right li a{
+    padding-left:0;
+    padding-right:0;
+}
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+    background-color: transparent;
+}
+
+/* ==========================================================================
+   5. Grid
+   ========================================================================== */
+/* 60px gutter */
+ .gutter-60.row {
+  margin-right: -30px;
+  margin-left: -30px;
+}
+
+.gutter-60 > [class^="col-"], .gutter-60 > [class^=" col-"] {
+  padding-right: 30px;
+  padding-left: 30px; 
+}
+
+.row { margin-bottom: 25px; }
+
+/* ==========================================================================
+   6. Pagination
+   ========================================================================== */
+.pagination-cont > .row {
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: right;
+}
+
+.pagination{
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.older-posts { float: right; }
+
+.newer-posts { float: left; }
+
+.pagination-cont {
+    display: none;
+}
+
+/* ==========================================================================
+   7. Carousel
+   ========================================================================== */
+/*.carousel-indicators li {
+    border-color: #8C8677;
+    margin: 1px 8px 1px 8px;
+    border-radius: 0;
+}
+
+.carousel-indicators .active {
+    background-color: #8C8677;
+    margin: 1px 9px 1px 9px;
+    border-style: none;
+    width: 10px;
+    height: 10px;
+}
+*/
+
+.carousel-indicators li {
+    border-color: #8C8677;
+    margin: 1px 8px 1px 8px;
+    border-radius: 0;
+}
+
+.carousel-indicators .active {
+    background-color: #4D5377;
+    margin: 1px 9px 1px 9px;
+    border-style: none;
+    width: 10px;
+    height: 10px;
 }
 
 
-/* Headings
--------------------------------------------------- */
-h1 {
-  font-size: 2em;
-  line-height: 1.25em;
-  font-weight: 400;
-  margin-bottom: .5em;
-}
-h2 {
-  font-size: 2em;
-  line-height: 1.25em;
-  font-weight: 300;
-  margin-bottom: .5em;
-  color: red;
-}
-h3 {
-  font-size: 1.4em;
-  line-height: 1.5em;
-  font-weight: 400;
-  margin-bottom: .5em;
-}
-h4 {
-  font-size: 1.125em;
-  font-weight: 600;
-  line-height: 1.5em;
-  margin-bottom: .5em;
-  color: red;
-}
-h1 a, h2 a, h3 a, h4 a {
-  color: inherit;
-  border: 0 !important;
+.carousel-indicators { bottom: -50px; }
+
+/* To prevent images supposed to be moved to the carousel to pop out in the 
+content before being moved. Note that it prevents these images to be visible
+if javascript is disabled. */
+.post-content img[alt^="bild"], .post-content img[alt^="Bild"] {
+    display: none;
 }
 
-
-
-/* Main
--------------------------------------------------- */
-.main {
-  padding-bottom: 1.5em;
-  border-bottom: 2px solid red;
-}
-.main hr {
-  margin: 3em 0;
-  height: 2px;
-  background: #ddd;
-}
-.main p,
-.main figure,
-.main ul,
-.main ol {
-  margin-bottom: 1.5em;
-}
-.main a {
-  border-bottom: 2px solid #ddd;
-}
-.main a:hover {
-  border-color: #222;
+.carousel {
+    margin-bottom: 2em;
 }
 
-/* Text blocks */
-.text ul,
-.text ol {
-  margin-left: 1em;
+/* ==========================================================================
+   7. Site Content
+   ========================================================================== */
+
+.posts {
+    display: none;
 }
 
-/* Project meta
--------------------------------------------------- */
-.meta {
-  margin-bottom: 1.5em;
-}
-.meta li {
-  float: left;
-  list-style: none;
-  margin-right: 2em;
-  color: red;
-}
-.meta li b {
-  font-weight: 400;
-  color: #000;
-  padding-right: .25em;
+.posts, .post-header, .post { padding: 0; }
+
+.post-title { font-size: 1em; margin: 0; font-family: 'Proxima Nova Regular'}
+
+.post h1{
+    margin-bottom: 0.5em;  
+    font-size: 1.3em;
 }
 
+h2.post-title{
+    text-transform: lowercase; 
+    margin-top: 1rem;
+}
 
-/* Project teaser
--------------------------------------------------- */
-.teaser {
-  list-style: none;
+.post-content {
+    -webkit-perspective:1; /* See http://caniuse.com/#feat=multicolumn */
+    -webkit-columns: 2;
+     -moz-columns: 2;
+    columns: 2;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
 }
-.teaser li {
-  margin-bottom: 1.5em;
-  list-style: none;
+
+div.post-header img { width: 100%; }
+
+.post-content img {
+    max-width: 100%;
 }
-@media screen and (min-width: 50em) {
-  .teaser li {
+
+.people .post-content, .contact .post-content{
+      -webkit-columns: auto ;
+      -moz-columns: auto;
+      columns: auto;
+}
+
+.people .post-content > ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.people .post-content > ul > li{
+    width: 350px;
+    float: right;
+    display: inline-block;
+}
+
+.people .post-content > ul > li:first-child {
+    margin-right: 60px;
     float: left;
-    width: 30%;
-    margin-left: 5%;
-  }
-  .teaser li:first-child {
-    margin-left: 0;
-  }
 }
 
-
-/* Next/Prev nav
--------------------------------------------------- */
-.nextprev {
-  padding: 1em 0;
-}
-.nextprev a {
-  border: 0;
-}
-.nextprev .prev {
-  float: left;
-}
-.nextprev .next {
-  float: right;
+.people .post-content > ul > li:nth-child(2n+3) {
+  /* nth-child is not as well supported as :first-child, thus limiting it to more rare cases */
+    margin-right: 60px;
+    float: left;
 }
 
-
-/* Footer
--------------------------------------------------- */
-.footer {
-  padding: 1em 0 6em;
-  font-size: .8em;
-}
-.copyright {
-  float: left;
-}
-.colophon {
-  float: right;
-}
-.colophon a b {
-  color: red;
-  padding-left: .25em;
+.contact iframe{
+    width: 760px; 
+    height: 450px;
 }
