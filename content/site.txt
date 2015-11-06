@@ -1,4 +1,4 @@
-Title: Kirby Starterkit
+Title: GRAAT
 
 ----
 
@@ -10,7 +10,7 @@ Description: This is Kirby's Starterkit.
 
 ----
 
-Keywords: Kirby, CMS, file-based
+Keywords: Kirby,CMS,file-based
 
 ----
 

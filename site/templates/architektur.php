@@ -1,5 +1,7 @@
 <?php snippet('header') ?>
 
+<?php snippet('navigation') ?>
+
   <main class="main" role="main">
 
     <h1><?php echo $page->title()->html() ?></h1>

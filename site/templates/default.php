@@ -1,5 +1,10 @@
 <?php snippet('header') ?>
 
+<?php snippet('navigation') ?>
+
+
+ <div class="site-wrapper">
+
   <main class="main" role="main">
 
     <div class="text">
