@@ -321,7 +321,7 @@ if javascript is disabled. */
    ========================================================================== */
 
 .posts {
-    display: none;
+    /*display: none;*/
 }
 
 .posts, .post-header, .post { padding: 0; }

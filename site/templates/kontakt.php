@@ -18,7 +18,7 @@
                     </article>
                 </div>
                 <div class="col-md-8">
-                    {{ghost_foot}}
+                    <?php echo $page->karte()->html() ?>
                 </div>
             </div>
         </div>
