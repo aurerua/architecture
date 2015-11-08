@@ -56,5 +56,5 @@
 
 <body class="nav-closed">
 
-  <div class="main-header" style="background-image: url(<?php echo url('assets/images/cover.jpg') ?>)"></div>
+  <div class="main-header" style="background-image: url(<?php echo url('content/cover.png') ?>)"></div>
   <!--<div class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}"></div>-->

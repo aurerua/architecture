@@ -36,14 +36,23 @@
 
 </div>
 
-{ { !Previous / next page links - displayed on every page } }
+<?php if($projects->pagination()->hasPages()): ?>
 <div class="container pagination-cont">
   <div class="row">
     <div>
-      {{pagination}}
+      
+      <nav class="pagination" role="navigation">
+     <?php if($projects->pagination()->hasPrevPage()): ?>
+        <a class="newer-posts" href="<?php echo $projects->pagination()->prevPageURL() ?>">&lt;&lt;&lt;</a>
+      <?php endif ?>
+      <?php if($projects->pagination()->hasNextPage()): ?>
+        <a class="older-posts" href="<?php echo $projects->pagination()->nextPageURL() ?>">&gt;&gt;&gt;</a>
+      <?php endif ?>
+      </nav>
     </div>
   </div>
 </div>
+<?php endif ?>
 
 </main>
 

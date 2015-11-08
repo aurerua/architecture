@@ -267,7 +267,7 @@ a:hover, a:focus {
 .newer-posts { float: left; }
 
 .pagination-cont {
-    display: none;
+    /*display: none;*/
 }
 
 /* ==========================================================================
