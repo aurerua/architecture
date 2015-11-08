@@ -8,16 +8,18 @@
     <div class="container posts">
       <!--Loop over the projects-->
       <?php $n = 0; foreach($projects as $project): $n++; ?>
-        <?php if(($n+3)%3 == 1): ?> <!--If this is the first element in a row-->
+        <?php if(($n+3)%3 == 1): ?> <!--This is the first element in a row-->
         <div class="row gutter-60">
         <?php endif ?>
 
         <div class="col-md-4">
           <article class="post center-block">
-            <?php foreach($project->images()->sortBy('sort', 'asc') as $image): ?>
+            <?php $m = 0; foreach($project->images()->sortBy('sort', 'asc') as $image): $m++ ?>
+            <?php if($m == 1): ?> <!--Only the first image gets displayed-->
             <a href="<?php echo $project->url() ?>">
               <img class="img-responsive" src="<?php echo $image->url() ?>" alt="<?php echo $image->name() ?>">
             </a>
+            <?php endif ?>
             <?php endforeach ?>
             <header class="post-header">
               <h2 class="post-title"><a href="<?php echo $project->url() ?>"><?php echo $project->title()->html() ?></a></h2>
@@ -25,10 +27,10 @@
           </article>
         </div>
 
-        <?php if(($n+1)%3 == 1): ?> <!--If this is the last element in a row-->
+        <?php if(($n+1)%3 == 1): ?> <!--This is the last element in a row-->
       </div>
       <?php else: ?>
-      <?php if($project == $last): ?> <!--If this the last element in the collection-->
+      <?php if($project == $last): ?> <!--This the last element in the collection-->
     </div>
     <?php endif ?><?php endif ?>
     <?php endforeach ?>
