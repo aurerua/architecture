@@ -11,15 +11,16 @@
             <div class="col-md-8">
                 <header>
                   <?php if($page->hasImages() == 1): ?>
+                    <?php foreach($page->images() as $image): ?>
                     <img class="img-responsive" src="<?php echo $image->url() ?>" alt="<?php echo $image->name() ?>">
+                    <?php endforeach ?>
                   <?php endif ?>
                   <?php if($page->hasImages() > 1): ?>
-                  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false" style="touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
                         <ol class="carousel-indicators">
-                          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                          <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
-                          <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
-                          <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
+                            <?php $m = 0; foreach($page->images()->sortBy('sort', 'asc') as $image): $m++ ?>
+                                <li data-target="#carousel-example-generic" data-slide-to="<?php echo ($m-1) ?>"<?php echo ($m == 1) ? 'class="active"' : '' ?>></li>
+                            <?php endforeach ?>
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <?php $m = 0; foreach($page->images()->sortBy('sort', 'asc') as $image): $m++ ?>
