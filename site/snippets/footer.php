@@ -12,8 +12,6 @@
 <?php echo js( 'assets/js/hammer.min.js') ?>
 <!--  Other js files -->
 <?php echo js( 'assets/js/add-touch-gestures.js') ?>
-
-
 </body>
 
 </html>

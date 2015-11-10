@@ -131,6 +131,11 @@ h2 { font-size: 1em; margin: 0; }
 p, div, a { font-family: 'Proxima Nova Regular', sans-serif; }
 footer { display:none; }
 section { text-align: justify; }
+a { color: #8C8677; }
+a:hover, a:focus {
+    color: #4D5377;
+    text-decoration: none;
+}
 
 
 /* ==========================================================================
@@ -176,13 +181,9 @@ section { text-align: justify; }
     color: #4D5377;
 }
 
-a {
-    color: #8C8677;
-}
-
-a:hover, a:focus {
-    color: #4D5377;
-    text-decoration: none;
+.navbar-right  a {
+    font-size: 1.2em;
+    text-transform: lowercase;
 }
 
 #custom-navbar .container {
@@ -324,7 +325,7 @@ if javascript is disabled. */
     /*display: none;*/
 }
 
-.posts, .post-header, .post { padding: 0; }
+.posts, .post-header, .post, .default { padding: 0; }
 
 .post-title { font-size: 1em; margin: 0; font-family: 'Proxima Nova Regular'}
 
@@ -385,4 +386,9 @@ div.post-header img { width: 100%; }
 .contact iframe{
     width: 760px; 
     height: 450px;
+}
+
+
+.post-title  a {
+    font-size: 1.2em;
 }

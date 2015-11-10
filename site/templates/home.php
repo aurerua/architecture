@@ -1,16 +1,19 @@
-<?php snippet('header') ?>
+<?php snippet( 'header') ?>
 
-<?php snippet('navigation') ?>
+<?php snippet( 'navigation') ?>
 
 
- <div class="site-wrapper">
-
-  <main class="main" role="main">
-
-    <div class="text">
-      <?php echo $page->text()->kirbytext() ?>
+<div id="fullpage" class="site-wrapper">
+  <main class="main section" role="main">
+    <div class="container default">
+      <div class="text">
+        <?php echo $page->text()->kirbytext() ?>
+      </div>
     </div>
-
   </main>
-
-<?php snippet('footer') ?>
+  <!--<aside class="section">-->
+  <!--  <div class="container default">-->
+  <!--    <?php echo $site->impressum()->kirbytext() ?>-->
+  <!--  </div>-->
+  <!--</aside>-->
+  <?php snippet( 'footer') ?>
