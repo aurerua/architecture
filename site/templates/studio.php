@@ -41,4 +41,4 @@
 
     
     
-<?php snippet('footer') ?> Hi
+<?php snippet('footer') ?>

@@ -413,6 +413,26 @@ div.post-header img { width: 100%; }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
   .navbar-right { width: 283.328px; }
+  
+  .people .post-content > ul > li{
+    width: 300px;
+  }
+
+  .people .post-content > ul > li:first-child {
+    margin-right: 26.656px;
+  }
+
+  .people .post-content > ul > li:nth-child(2n+3) {
+    /* nth-child is not as well supported as :first-child, thus limiting it to more rare cases */
+    margin-right: 26.656px;
+  }
+  
+  
+    .contact iframe {
+        width: 626.656px; 
+        height: 350px;
+    }
+
 }
 
 /* Medium Devices, Desktops */
@@ -420,10 +440,39 @@ div.post-header img { width: 100%; }
   .navbar-custom .container {
       /*width: 720px;*/
   }
+    .people .post-content > ul > li{
+    width: 350px;
+  }
+
+  .people .post-content > ul > li:first-child {
+    margin-right: 50px;
+  }
+
+  .people .post-content > ul > li:nth-child(2n+3) {
+    /* nth-child is not as well supported as :first-child, thus limiting it to more rare cases */
+    margin-right: 50px;
+  }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
+    .container>.navbar-collapse, .container>.navbar-header {
+      margin-left: 0;    
+    }
+    .navbar-brand {
+        padding-left: 0;
+    }
+
+    .people .post-content > ul > li{
+        width: auto;   
+    }
+    
+    .contact iframe {
+        width: 480px; 
+        height: 250px;
+    }
+
 
 }
 

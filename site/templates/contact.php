@@ -7,7 +7,7 @@
     <main class="content" role="main">
         <div class="container post contact">
             <div class="row gutter-60">
-                <div class="col-md-4">
+                <div class="col-xs-12 col-md-4">
                     <article class="{{post_class}}">
                         <header class="post-header">
                             <h1 class="post-title"><?php echo $page->title()->html() ?></h1>
@@ -17,7 +17,7 @@
                         </section>
                     </article>
                 </div>
-                <div class="col-md-8">
+                <div class="col-xs-12 col-md-8">
                     <?php echo $page->karte()->html() ?>
                 </div>
             </div>
