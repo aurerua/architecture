@@ -180,6 +180,14 @@ a:hover, a:focus {
 */
 .navbar-right > .active > a {
     color: #4D5377;
+    background-color: white;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #4D5377;
+    background-color: white;
 }
 
 .navbar-right  a {
@@ -197,6 +205,11 @@ a:hover, a:focus {
 .navbar.navbar-custom {
     margin-top: 0.75em;
     margin-bottom: 2.5em;
+}
+
+.navbar-custom {
+    background-color: white;
+    border-color: white;
 }
 
 .navbar-custom a.navbar-brand { font-size: 2.5rem; }
@@ -228,6 +241,9 @@ a:hover, a:focus {
     padding-left:0;
     padding-right:0;
 }
+
+
+
 
 .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
     background-color: transparent;

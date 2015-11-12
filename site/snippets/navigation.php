@@ -7,7 +7,7 @@ $items = $pages->visible();
 if($items->count()):
 
 ?>
-<nav id="custom-navbar" class="navbar navbar-custom">
+<nav id="custom-navbar" class="navbar navbar-default navbar-custom">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
