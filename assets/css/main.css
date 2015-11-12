@@ -166,6 +166,7 @@ a:hover, a:focus {
 /* one left floated, one centered and one right floated. (apply */
 /* "text-align: center;" to ul element and add "display:inline-block" to the */
 /* list items. Then float the first li left and the last li right.) */
+
 /* The solution used below requires the centered element to come last in the */
 /* markup. */
 
@@ -274,20 +275,6 @@ a:hover, a:focus {
 /* ==========================================================================
    7. Carousel
    ========================================================================== */
-/*.carousel-indicators li {
-    border-color: #8C8677;
-    margin: 1px 8px 1px 8px;
-    border-radius: 0;
-}
-
-.carousel-indicators .active {
-    background-color: #8C8677;
-    margin: 1px 9px 1px 9px;
-    border-style: none;
-    width: 10px;
-    height: 10px;
-}
-*/
 
 .carousel-indicators li {
     border-color: #8C8677;
@@ -306,19 +293,12 @@ a:hover, a:focus {
 
 .carousel-indicators { bottom: -50px; }
 
-/* To prevent images supposed to be moved to the carousel to pop out in the 
-content before being moved. Note that it prevents these images to be visible
-if javascript is disabled. */
-.post-content img[alt^="bild"], .post-content img[alt^="Bild"] {
-    display: none;
-}
-
 .carousel {
     margin-bottom: 2em;
 }
 
 /* ==========================================================================
-   7. Site Content
+   8. Site Content
    ========================================================================== */
 
 .posts {
@@ -339,6 +319,11 @@ h2.post-title{
     margin-top: 1rem;
 }
 
+
+.post-title  a {
+    font-size: 1.2em;
+}
+
 .post-content {
     -webkit-perspective:1; /* See http://caniuse.com/#feat=multicolumn */
     -webkit-columns: 2;
@@ -354,6 +339,11 @@ div.post-header img { width: 100%; }
 .post-content img {
     max-width: 100%;
 }
+
+/* ==========================================================================
+   9. Studio Page
+   ========================================================================== */
+
 
 .people .post-content, .contact .post-content{
       -webkit-columns: auto ;
@@ -383,12 +373,52 @@ div.post-header img { width: 100%; }
     float: left;
 }
 
+/* ==========================================================================
+   10. Contact page
+   ========================================================================== */
+
 .contact iframe{
     width: 760px; 
     height: 450px;
 }
 
 
-.post-title  a {
-    font-size: 1.2em;
+
+/* ==========================================================================
+   10. Media queries
+   ========================================================================== */
+
+/* http://getbootstrap.com/customize/#media-queries-breakpoints
+/* 1200, 992, 768, 480
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .navbar-right { width: 283.328px; }
 }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .navbar-custom .container {
+      /*width: 720px;*/
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    
+}
+    
+/*@media screen and (min-width: 500px) and (max-width: 800px) { ... }
