@@ -1,0 +1,12 @@
+Title: Contact
+
+----
+
+Text: 
+
+- (link: https://twitter.com/aurerua text: Aurélien Giraud Twitter's page)
+- (link: https://github.com/aurerua text: Aurélien Giraud GitHub's page)
+
+----
+
+Karte: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d66475.78911206691!2d-3.2755947132251437!3d55.94104559022489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b800a5982623%3A0x64f2147b7ce71727!2sEdinburgh%2C+UK!5e1!3m2!1sen!2sus!4v1447543153028" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>

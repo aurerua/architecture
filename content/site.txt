@@ -1,17 +1,23 @@
-Title: Kirby Starterkit
+Title: Architecture
 
 ----
 
-Author: Bastian Allgeier GmbH
+Author: Web: Aurelien Giraud, Design: Johan Wagner
 
 ----
 
-Description: This is Kirby's Starterkit.
+Description: 
+
+A simple website:
+- a Home page
+- a Projects page (linking to each Project's page)
+- a Team page
+- a Contact Page
 
 ----
 
-Keywords: Kirby, CMS, file-based
+Keywords: 
 
 ----
 
-Copyright: © 2009-(date: Year) (link: http://getkirby.com text: Kirby)
+Copyright: Made with Kirby © 2009-(date: Year) (link: http://getkirby.com text: Kirby)

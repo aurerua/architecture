@@ -129,7 +129,7 @@ h1 { margin: 0; font-family: 'PF Din Text Pro Regular', sans-serif; color: #4D53
 h2, h3, h4, h5, h6 { font-family: 'Proxima Nova Regular', sans-serif; }
 h2 { font-size: 1em; margin: 0; }
 p, div, a { font-family: 'Proxima Nova Regular', sans-serif; }
-footer { display:none; }
+/*footer { display:none; }*/
 section { text-align: justify; }
 a { color: #8C8677; }
 a:hover, a:focus {

@@ -12,9 +12,6 @@ fields:
   description:
     label: Description
     type:  textarea
-  impressum: 
-    label: Impressum
-    type:  textarea
   keywords:
     label: Keywords
     type:  tags
