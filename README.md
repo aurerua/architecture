@@ -1,4 +1,4 @@
-![Architecture Screenshot](https://www.dropbox.com/s/0xufdordo14cg0k/architecture.png)
+![Architecture Screenshot](https://www.dropbox.com/s/0xufdordo14cg0k/architecture.png?raw=1)
 
 # Architecture - A website built with [Kirby](http://getkirby.com/) a file-based CMS. 
 
