@@ -271,8 +271,8 @@ a:hover, a:focus {
   padding-left: 30px; 
 }
 
-.row { 
-  margin-bottom: 25px;
+.row:first-child { 
+  margin-bottom: 30px;
   /*max-width:100%;*/
 }
 
@@ -343,7 +343,7 @@ a:hover, a:focus {
 
 h2.post-title{
     text-transform: lowercase; 
-    margin-top: 1rem;
+    margin-top: 0.8em;
 }
 
 
@@ -434,6 +434,7 @@ div.post-header img { width: 100%; }
 
 .impressum {
   float: right !important;
+  margin-bottom: 0.6em;
 }
 
 .impressum > a {
