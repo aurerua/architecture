@@ -2,7 +2,7 @@
 
 <?php snippet('navigation') ?>
 
- <div class="site-wrapper">
+ <div class="wrapper">
 
     <main class="content" role="main">
         <div class="container post people">
@@ -41,6 +41,6 @@
         </div>
     </main>
 
-    
+</div>
     
 <?php snippet('footer') ?>

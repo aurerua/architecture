@@ -1,6 +1,6 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Three columns
+title: Impressum
 pages: false
 files: false
 fields:

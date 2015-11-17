@@ -3,7 +3,7 @@
 <?php snippet('navigation') ?>
 
 
- <div class="site-wrapper">
+ <div class="wrapper">
 
   <main class="main" role="main">
     <div class="container default">
@@ -13,5 +13,7 @@
       </div>
     </div>
   </main>
+
+</div>
 
 <?php snippet('footer') ?>

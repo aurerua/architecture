@@ -1,7 +1,7 @@
 <?php snippet( 'header') ?>
 <?php snippet( 'navigation') ?>
 
-<div class="site-wrapper">
+<div class="wrapper">
 
   <main id="content" class="content" role="main">
 
@@ -57,5 +57,7 @@
 <?php endif ?>
 
 </main>
+
+</div>
 
 <?php snippet( 'footer') ?>

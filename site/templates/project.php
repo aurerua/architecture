@@ -2,7 +2,7 @@
 
 <?php snippet( 'navigation') ?>
 
-<div class="site-wrapper">
+<div class="wrapper">
 
     <div class="container post-header">
         <div class="row gutter-60">
@@ -58,5 +58,7 @@
             </div>
         </div>
     </main>
+
+</div>
 
     <?php snippet( 'footer') ?>

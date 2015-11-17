@@ -145,9 +145,17 @@ a:hover, a:focus {
 .main-header {
     position: relative;
     width: 100%;
+    /*min-width: 1230px;*/ /* 1170px plus 30px negative margin on both sides, otherwise the image does not completely stretch to right when the screen width diminishes passed 1230px */
     height: 33.333333%;
     background: #222 no-repeat center center;
     background-size: cover;
+}
+
+/* Important to get rid of the appearance of a horizontal scrollbar and a white 
+   space stretching vertically on the right of the page when scrolled to the far 
+   right: */
+.container {  
+  overflow: hidden;
 }
 
 /* ==========================================================================
@@ -263,7 +271,11 @@ a:hover, a:focus {
   padding-left: 30px; 
 }
 
-.row { margin-bottom: 25px; }
+.row { 
+  margin-bottom: 25px;
+  /*max-width:100%;*/
+}
+
 
 /* ==========================================================================
    6. Pagination
@@ -316,7 +328,6 @@ a:hover, a:focus {
 /* ==========================================================================
    8. Site Content
    ========================================================================== */
-
 .posts {
     /*display: none;*/
 }
@@ -357,7 +368,7 @@ div.post-header img { width: 100%; }
 }
 
 /* ==========================================================================
-   9. Studio Page
+   9. Team Page
    ========================================================================== */
 
 
@@ -399,9 +410,38 @@ div.post-header img { width: 100%; }
 }
 
 
+/* ==========================================================================
+   11. Media queries
+   ========================================================================== */
+.wrapper {
+  min-height: 60%;
+  /*margin-bottom: -1em;*/
+}
+
+.wrapper:after {
+  content: "";
+  display: block;
+}
+
+.footer, .wrapper:after {
+  height: 1em; 
+}
+
+.footer > .container {
+  padding: 0;
+}
+
+
+.impressum {
+  float: right !important;
+}
+
+.impressum > a {
+  color: #E2D2E2;
+}
 
 /* ==========================================================================
-   10. Media queries
+   12. Media queries
    ========================================================================== */
 
 /* http://getbootstrap.com/customize/#media-queries-breakpoints
@@ -412,6 +452,9 @@ div.post-header img { width: 100%; }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+  .main-header {
+    /*min-width: 1030px;*/ /* 970 plus 2 negative margins*/
+  }
   .navbar-right { width: 283.328px; }
   
   .people .post-content > ul > li{
@@ -437,6 +480,10 @@ div.post-header img { width: 100%; }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+  .main-header {
+    /*min-width: 1030px;*/ /* 970 plus 2 negative margins*/
+  }
+
   .navbar-custom .container {
       /*width: 720px;*/
   }

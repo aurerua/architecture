@@ -1,8 +1,10 @@
 <?php snippet('header') ?>
 
+<div class="wrapper">
+    
 <?php snippet('navigation') ?>
 
- <div class="site-wrapper">
+ 
 
     <div class="container post-header">
         <div class="row gutter-60">
@@ -39,6 +41,6 @@
         </div>
     </main>
 
-    
+</div>
     
 <?php snippet('footer') ?>
