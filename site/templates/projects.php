@@ -42,7 +42,6 @@
 <div class="container pagination-cont">
   <div class="row">
     <div>
-      
       <nav class="pagination" role="navigation">
      <?php if($projects->pagination()->hasPrevPage()): ?>
         <a class="newer-posts" href="<?php echo $projects->pagination()->prevPageURL() ?>">&lt;&lt;&lt;</a>

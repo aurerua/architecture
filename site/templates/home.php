@@ -1,9 +1,9 @@
 <?php snippet( 'header') ?>
+<?php snippet( 'navigation') ?>
 
 <div class="wrapper">
   
-  <?php snippet( 'navigation') ?>
-
+  
 
 
   <main class="main section" role="main">

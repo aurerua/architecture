@@ -339,7 +339,7 @@ a:focus {
    space stretching vertically on the right of the page when scrolled to the far 
    right: */
 .container {
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 
@@ -437,7 +437,8 @@ a:focus {
 }
 
 .navbar-right {
-    width: 350px;
+    width: 360px;
+    padding-right: 30px;
 }
 
 .navbar-right li {
@@ -472,7 +473,9 @@ a:focus {
     background-color: transparent;
 }
 
-
+.navbar-brand {
+    padding-left: 45px;
+}
 /* ==========================================================================
    5. Grid
    ========================================================================== */
@@ -481,14 +484,18 @@ a:focus {
 /* 60px gutter */
 
 .gutter-60.row {
-    margin-right: -30px;
-    margin-left: -30px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 .gutter-60 > [class^="col-"],
 .gutter-60 > [class^=" col-"] {
     padding-right: 30px;
     padding-left: 30px;
+}
+
+.row {
+    /*width:1170px;*/
 }
 
 .row:first-child {
@@ -505,6 +512,8 @@ a:focus {
     margin-bottom: 0;
     margin-top: 0;
     text-align: right;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .pagination {
@@ -607,6 +616,17 @@ div.post-header img {
     max-width: 100%;
 }
 
+/* To prevent the content to go too close to the borders of the window. */
+main {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+body > nav {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 
 /* ==========================================================================
    9. Team Page
@@ -625,7 +645,7 @@ div.post-header img {
 }
 
 .people .post-content > ul > li {
-    width: 350px;
+    width: 330px;
     float: right;
     display: inline-block;
 }
@@ -647,17 +667,17 @@ div.post-header img {
    ========================================================================== */
 
 .contact iframe {
-    width: 760px;
+    width: 720px;
     height: 450px;
 }
 
 
 /* ==========================================================================
-   11. Media queries
+   11. Footer
    ========================================================================== */
 
 .wrapper {
-    min-height: 60%;
+    min-height: 50%;
     /*margin-bottom: -1em;*/
 }
 
@@ -672,7 +692,7 @@ div.post-header img {
 }
 
 .footer > .container {
-    padding: 0;
+    padding: 0 30px 0 0;
 }
 
 .impressum {
@@ -685,13 +705,6 @@ div.post-header img {
 }
 
 
-/* To prevent the content to go too close to the borders of the window. */
-
-main,
-nav {
-    margin-left: 20px;
-    margin-right: 20px;
-}
 
 
 /* ==========================================================================
@@ -758,6 +771,24 @@ nav {
     .navbar-brand {
         padding-left: 0;
     }
+    .container>.navbar-header {
+        margin-right: 0px;
+    }
+    
+    .row:first-child {
+        margin-bottom: 0px;
+    }
+
+    .posts:first-child {
+        margin-bottom: 0px;
+        margin-top: -20px;
+    }
+
+    .col-md-4 {
+        margin-top: 20px;
+    }
+
+
     .people .post-content > ul > li {
         width: auto;
     }
