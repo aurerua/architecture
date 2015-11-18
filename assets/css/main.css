@@ -723,10 +723,10 @@ body > nav {
 
 @media only screen and (max-width: 1200px) {
     .navbar-right {
-        width: 283.328px;
+        width: 293.328px;
     }
     .people .post-content > ul > li {
-        width: 300px;
+        width: 263.328px;
     }
     .people .post-content > ul > li:first-child {
         margin-right: 26.656px;
@@ -736,7 +736,7 @@ body > nav {
         margin-right: 26.656px;
     }
     .contact iframe {
-        width: 626.656px;
+        width: 586.656px;
         height: 350px;
     }
 }
@@ -771,6 +771,7 @@ body > nav {
     .contact iframe {
         width: 100%;
         height: 450px;
+        margin-top: 30px;
     }
 }
 
