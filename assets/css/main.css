@@ -745,6 +745,19 @@ body > nav {
 /* Medium Devices, Desktops */
 
 @media only screen and (max-width: 992px) {
+    .row:first-child {
+        margin-bottom: 0px;
+    }
+
+    .posts:first-child {
+        margin-bottom: 0px;
+        margin-top: -20px;
+    }
+
+    .col-md-4 {
+        margin-top: 20px;
+    }
+
     .people .post-content > ul > li {
         width: auto;
     }
@@ -775,19 +788,6 @@ body > nav {
         margin-right: 0px;
     }
     
-    .row:first-child {
-        margin-bottom: 0px;
-    }
-
-    .posts:first-child {
-        margin-bottom: 0px;
-        margin-top: -20px;
-    }
-
-    .col-md-4 {
-        margin-top: 20px;
-    }
-
 
     .people .post-content > ul > li {
         width: auto;
