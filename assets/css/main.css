@@ -250,9 +250,6 @@ a:hover, a:focus {
     padding-right:0;
 }
 
-
-
-
 .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
     background-color: transparent;
 }
@@ -370,8 +367,6 @@ div.post-header img { width: 100%; }
 /* ==========================================================================
    9. Team Page
    ========================================================================== */
-
-
 .people .post-content, .contact .post-content{
       -webkit-columns: auto ;
       -moz-columns: auto;
@@ -453,9 +448,6 @@ div.post-header img { width: 100%; }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-  .main-header {
-    /*min-width: 1030px;*/ /* 970 plus 2 negative margins*/
-  }
   .navbar-right { width: 283.328px; }
   
   .people .post-content > ul > li{
@@ -470,24 +462,16 @@ div.post-header img { width: 100%; }
     /* nth-child is not as well supported as :first-child, thus limiting it to more rare cases */
     margin-right: 26.656px;
   }
-  
-  
-    .contact iframe {
-        width: 626.656px; 
-        height: 350px;
-    }
+
+  .contact iframe {
+      width: 626.656px; 
+      height: 350px;
+  }
 
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-  .main-header {
-    /*min-width: 1030px;*/ /* 970 plus 2 negative margins*/
-  }
-
-  .navbar-custom .container {
-      /*width: 720px;*/
-  }
     .people .post-content > ul > li{
     width: 350px;
   }
@@ -500,8 +484,18 @@ div.post-header img { width: 100%; }
     /* nth-child is not as well supported as :first-child, thus limiting it to more rare cases */
     margin-right: 50px;
   }
-}
 
+  main, nav, .row {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .contact iframe {
+    width: 100%; 
+    height: 450px;
+  }
+  
+}
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 
@@ -517,16 +511,24 @@ div.post-header img { width: 100%; }
     }
     
     .contact iframe {
-        width: 480px; 
-        height: 250px;
+        width: 100%; 
+        height: 400px;
     }
 
-
+   .post-content{
+        -webkit-columns: auto ;
+        -moz-columns: auto;
+        columns: auto;
+    }
+    
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width : 480px) {
-
+    .contact iframe {
+        width: 100%; 
+        height: 250px;
+    }
 }
 
 /* Custom, iPhone Retina */ 
