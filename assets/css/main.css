@@ -2,6 +2,7 @@
    Table of Contents
    ========================================================================== */
 
+
 /*
 
     0.  Normalize
@@ -21,87 +22,225 @@
 
 */
 
+
 /* ==========================================================================
    0. Normalize.css v2.1.3 | MIT License | git.io/normalize | (minified)
    ========================================================================== */
 
-article, aside, details,
-figcaption, figure,
-footer, header, hgroup,
-main, nav, section,
-summary { display: block; }
-audio, canvas, video { display: inline-block; }
-audio:not([controls]) { display: none; height: 0; }
-[hidden], template { display: none; }
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden],
+template {
+    display: none;
+}
+
 html {
-   font-family: sans-serif;
-   -ms-text-size-adjust: 100%;
-   -webkit-text-size-adjust: 100%;
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
-body { margin: 0; }
-a { background: transparent; }
-a:focus { outline: thin dotted; }
-a:active, a:hover { outline: 0; }
-h1 { font-size: 2em; margin: 0.67em 0; }
-abbr[title] { border-bottom: 1px dotted; }
-b, strong { font-weight: 700; }
-dfn { font-style: italic; }
+
+body {
+    margin: 0;
+}
+
+a {
+    background: transparent;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+dfn {
+    font-style: italic;
+}
+
 hr {
-   -moz-box-sizing: content-box;
-   box-sizing: content-box;
-   height: 0;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
 }
-mark { background: #FF0; color: #000; }
-code, kbd, pre,
-samp { font-family: monospace, serif; font-size: 1em; }
-pre { white-space: pre-wrap; }
-q { quotes: "\201C" "\201D" "\2018" "\2019"; }
-small { font-size: 80%; }
-sub, sup {
-   font-size: 75%;
-   line-height: 0;
-   position: relative;
-   vertical-align: baseline;
+
+mark {
+    background: #FF0;
+    color: #000;
 }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
-img { border: 0; }
-svg:not(:root) { overflow: hidden; }
-figure { margin: 0; }
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+img {
+    border: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+figure {
+    margin: 0;
+}
+
 fieldset {
-   border: 1px solid #c0c0c0;
-   margin: 0 2px;
-   padding: 0.35em 0.625em 0.75em;
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
 }
-legend { border: 0; padding: 0; }
-button, input, select,
-textarea { font-family: inherit; font-size: 100%; margin: 0; }
-button, input { line-height: normal; }
-button, select { text-transform: none; }
-button, html input[type="button"],
-input[type="reset"], input[type="submit"] {
-   -webkit-appearance: button;
-   cursor: pointer;
+
+legend {
+    border: 0;
+    padding: 0;
 }
-button[disabled], html input[disabled] { cursor: default; }
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+button,
+input {
+    line-height: normal;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
 input[type="checkbox"],
-input[type="radio"] { box-sizing: border-box; padding: 0; }
-input[type="search"] {
-   -webkit-appearance: textfield;
-   -moz-box-sizing: content-box;
-   -webkit-box-sizing: content-box;
-   box-sizing: content-box;
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
 }
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
 input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
 button::-moz-focus-inner,
-input::-moz-focus-inner { border: 0; padding: 0; }
-textarea { overflow: auto; vertical-align: top; }
-table { border-collapse: collapse; border-spacing: 0; }
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 
 /* ==========================================================================
    1. Fonts and colors
    ========================================================================== */
+
+
 /*font-family: 'Proxima Nova Regular'*/
 /*font-family: 'Proxima Nova SemiBold'*/
 /*font-family: 'Proxima Nova Light'*/
@@ -110,8 +249,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 /*font-family: 'PF Din Text Pro Medium'*/
 /*font-family: 'PF Din Text Pro Light'*/
 /*font-family: 'PF Din Text Pro Thin'*/
-/* Tips: http://stackoverflow.com/questions/18740757/using-a-different-font-with-twitter-bootstrap */
 
+/* Tips: http://stackoverflow.com/questions/18740757/using-a-different-font-with-twitter-bootstrap */
 
 /* Blue: #4D5377 */
 /* Gray1: #B9B6AE */
@@ -120,19 +259,59 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* Black1: #39373C */
 /* Black2: #060307 */
 
+
 /* ==========================================================================
    2. Base rules
    ========================================================================== */
-html, body  { height: 100%; color:#8C8677;}
-html { font-family: 'Proxima Nova Regular', sans-serif; }
-h1 { margin: 0; font-family: 'PF Din Text Pro Regular', sans-serif; color: #4D5377;}
-h2, h3, h4, h5, h6 { font-family: 'Proxima Nova Regular', sans-serif; }
-h2 { font-size: 1em; margin: 0; }
-p, div, a { font-family: 'Proxima Nova Regular', sans-serif; }
+
+html,
+body {
+    height: 100%;
+    color: #8C8677;
+}
+
+html {
+    font-family: 'Proxima Nova Regular', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'PF Din Text Pro Regular', sans-serif;
+    color: #4D5377;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Proxima Nova Regular', sans-serif;
+}
+
+h2 {
+    font-size: 1em;
+    margin: 0;
+}
+
+p,
+div,
+a {
+    font-family: 'Proxima Nova Regular', sans-serif;
+}
+
+
 /*footer { display:none; }*/
-section { text-align: justify; }
-a { color: #8C8677; }
-a:hover, a:focus {
+
+section {
+    text-align: justify;
+}
+
+a {
+    color: #8C8677;
+}
+
+a:hover,
+a:focus {
     color: #4D5377;
     text-decoration: none;
 }
@@ -141,42 +320,72 @@ a:hover, a:focus {
 /* ==========================================================================
    3. Heading
    ========================================================================== */
+
+
 /* Big cover image on the home page */
+
 .main-header {
     position: relative;
     width: 100%;
-    /*min-width: 1230px;*/ /* 1170px plus 30px negative margin on both sides, otherwise the image does not completely stretch to right when the screen width diminishes passed 1230px */
+    /*min-width: 1230px;*/
+    /* 1170px plus 30px negative margin on both sides, otherwise the image does not completely stretch to right when the screen width diminishes passed 1230px */
     height: 33.333333%;
     background: #222 no-repeat center center;
     background-size: cover;
 }
 
+
 /* Important to get rid of the appearance of a horizontal scrollbar and a white 
    space stretching vertically on the right of the page when scrolled to the far 
    right: */
-.container {  
-  overflow: hidden;
+.container {
+    overflow: hidden;
 }
+
 
 /* ==========================================================================
    4. Navbar
    ========================================================================== */
+
+
 /* Purpose: Make the text of first and last elements in the right part of the */
+
+
 /* navbar in line with the width of the last column. */
 
+
 /* Information: */
+
+
 /* Width of bootstrap container (@container-large-desktop): */
+
+
 /*     (1140px + @grid-gutter-width) = 1140px +30px = 1170px  */
+
+
 /* Width of a column with custom gutter-width of 60 px:*/
+
+
 /*     (1170 - 2*60)/3 = 350px */
 
-/* Problem: Bootstrap interferes with a common way to position 3 divs with */ 
+
+/* Problem: Bootstrap interferes with a common way to position 3 divs with */
+
+
 /* one left floated, one centered and one right floated. (apply */
+
+
 /* "text-align: center;" to ul element and add "display:inline-block" to the */
+
+
 /* list items. Then float the first li left and the last li right.) */
 
+
 /* The solution used below requires the centered element to come last in the */
+
+
 /* markup. */
+
 
 /*.navbar-right > li > a {
     color: #8C8677;
@@ -186,19 +395,20 @@ a:hover, a:focus {
     color: #4D5377;
 }
 */
+
 .navbar-right > .active > a {
     color: #4D5377;
     background-color: white;
 }
 
-.navbar-default .navbar-nav>.active>a, 
-.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
     color: #4D5377;
     background-color: white;
 }
 
-.navbar-right  a {
+.navbar-right a {
     font-size: 1.2em;
     text-transform: lowercase;
 }
@@ -208,7 +418,9 @@ a:hover, a:focus {
     padding-right: 0;
 }
 
-.navbar h1 { font-size: 1em;}
+.navbar h1 {
+    font-size: 1em;
+}
 
 .navbar.navbar-custom {
     margin-top: 0.75em;
@@ -220,9 +432,13 @@ a:hover, a:focus {
     border-color: white;
 }
 
-.navbar-custom a.navbar-brand { font-size: 2.5rem; }
+.navbar-custom a.navbar-brand {
+    font-size: 2.5rem;
+}
 
-.navbar-right { width: 350px; }
+.navbar-right {
+    width: 350px;
+}
 
 .navbar-right li {
     float: right;
@@ -245,57 +461,70 @@ a:hover, a:focus {
     text-align: center;
 }
 
-.navbar-right li,  .navbar-right li a{
-    padding-left:0;
-    padding-right:0;
+.navbar-right li,
+.navbar-right li a {
+    padding-left: 0;
+    padding-right: 0;
 }
 
-.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
     background-color: transparent;
 }
+
 
 /* ==========================================================================
    5. Grid
    ========================================================================== */
+
+
 /* 60px gutter */
- .gutter-60.row {
-  margin-right: -30px;
-  margin-left: -30px;
+
+.gutter-60.row {
+    margin-right: -30px;
+    margin-left: -30px;
 }
 
-.gutter-60 > [class^="col-"], .gutter-60 > [class^=" col-"] {
-  padding-right: 30px;
-  padding-left: 30px; 
+.gutter-60 > [class^="col-"],
+.gutter-60 > [class^=" col-"] {
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
-.row:first-child { 
-  margin-bottom: 30px;
-  /*max-width:100%;*/
+.row:first-child {
+    margin-bottom: 30px;
+    /*max-width:100%;*/
 }
 
 
 /* ==========================================================================
    6. Pagination
    ========================================================================== */
+
 .pagination-cont > .row {
     margin-bottom: 0;
     margin-top: 0;
     text-align: right;
 }
 
-.pagination{
+.pagination {
     width: 100%;
     margin-bottom: 0;
     margin-top: 0;
 }
 
-.older-posts { float: right; }
+.older-posts {
+    float: right;
+}
 
-.newer-posts { float: left; }
+.newer-posts {
+    float: left;
+}
 
 .pagination-cont {
     /*display: none;*/
 }
+
 
 /* ==========================================================================
    7. Carousel
@@ -315,70 +544,87 @@ a:hover, a:focus {
     height: 10px;
 }
 
-
-.carousel-indicators { bottom: -50px; }
+.carousel-indicators {
+    bottom: -50px;
+}
 
 .carousel {
     margin-bottom: 2em;
 }
 
+
 /* ==========================================================================
    8. Site Content
    ========================================================================== */
+
 .posts {
     /*display: none;*/
 }
 
-.posts, .post-header, .post, .default { padding: 0; }
+.posts,
+.post-header,
+.post,
+.default {
+    padding: 0;
+}
 
-.post-title { font-size: 1em; margin: 0; font-family: 'Proxima Nova Regular'}
+.post-title {
+    font-size: 1em;
+    margin: 0;
+    font-family: 'Proxima Nova Regular'
+}
 
-.post h1{
-    margin-bottom: 0.5em;  
+.post h1 {
+    margin-bottom: 0.5em;
     font-size: 1.3em;
 }
 
-h2.post-title{
-    text-transform: lowercase; 
+h2.post-title {
+    text-transform: lowercase;
     margin-top: 0.8em;
 }
 
-
-.post-title  a {
+.post-title a {
     font-size: 1.2em;
 }
 
 .post-content {
-    -webkit-perspective:1; /* See http://caniuse.com/#feat=multicolumn */
+    -webkit-perspective: 1;
+    /* See http://caniuse.com/#feat=multicolumn */
     -webkit-columns: 2;
-     -moz-columns: 2;
+    -moz-columns: 2;
     columns: 2;
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
 }
 
-div.post-header img { width: 100%; }
+div.post-header img {
+    width: 100%;
+}
 
 .post-content img {
     max-width: 100%;
 }
 
+
 /* ==========================================================================
    9. Team Page
    ========================================================================== */
-.people .post-content, .contact .post-content{
-      -webkit-columns: auto ;
-      -moz-columns: auto;
-      columns: auto;
+
+.people .post-content,
+.contact .post-content {
+    -webkit-columns: auto;
+    -moz-columns: auto;
+    columns: auto;
 }
 
-.people .post-content > ul{
+.people .post-content > ul {
     list-style-type: none;
     padding: 0;
 }
 
-.people .post-content > ul > li{
+.people .post-content > ul > li {
     width: 350px;
     float: right;
     display: inline-block;
@@ -390,17 +636,18 @@ div.post-header img { width: 100%; }
 }
 
 .people .post-content > ul > li:nth-child(2n+3) {
-  /* nth-child is not as well supported as :first-child, thus limiting it to more rare cases */
+    /* nth-child is not as well supported as :first-child, thus limiting it to more rare cases */
     margin-right: 60px;
     float: left;
 }
+
 
 /* ==========================================================================
    10. Contact page
    ========================================================================== */
 
-.contact iframe{
-    width: 760px; 
+.contact iframe {
+    width: 760px;
     height: 450px;
 }
 
@@ -408,37 +655,49 @@ div.post-header img { width: 100%; }
 /* ==========================================================================
    11. Media queries
    ========================================================================== */
+
 .wrapper {
-  min-height: 60%;
-  /*margin-bottom: -1em;*/
+    min-height: 60%;
+    /*margin-bottom: -1em;*/
 }
 
 .wrapper:after {
-  content: "";
-  display: block;
+    content: "";
+    display: block;
 }
 
-.footer, .wrapper:after {
-  height: 1em; 
+.footer,
+.wrapper:after {
+    height: 1em;
 }
 
 .footer > .container {
-  padding: 0;
+    padding: 0;
 }
 
-
 .impressum {
-  float: right !important;
-  margin-bottom: 0.6em;
+    float: right !important;
+    margin-bottom: 0.6em;
 }
 
 .impressum > a {
-  color: #E2D2E2;
+    color: #E2D2E2;
 }
+
+
+/* To prevent the content to go too close to the borders of the window. */
+
+main,
+nav {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 
 /* ==========================================================================
    12. Media queries
    ========================================================================== */
+
 
 /* http://getbootstrap.com/customize/#media-queries-breakpoints
 /* 1200, 992, 768, 480
@@ -446,94 +705,90 @@ div.post-header img { width: 100%; }
 
 /*==========  Non-Mobile First Method  ==========*/
 
+
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
-  .navbar-right { width: 283.328px; }
-  
-  .people .post-content > ul > li{
-    width: 300px;
-  }
 
-  .people .post-content > ul > li:first-child {
-    margin-right: 26.656px;
-  }
-
-  .people .post-content > ul > li:nth-child(2n+3) {
-    /* nth-child is not as well supported as :first-child, thus limiting it to more rare cases */
-    margin-right: 26.656px;
-  }
-
-  .contact iframe {
-      width: 626.656px; 
-      height: 350px;
-  }
-
+@media only screen and (max-width: 1200px) {
+    .navbar-right {
+        width: 283.328px;
+    }
+    .people .post-content > ul > li {
+        width: 300px;
+    }
+    .people .post-content > ul > li:first-child {
+        margin-right: 26.656px;
+    }
+    .people .post-content > ul > li:nth-child(2n+3) {
+        /* nth-child is not as well supported as :first-child, thus limiting it to more rare cases */
+        margin-right: 26.656px;
+    }
+    .contact iframe {
+        width: 626.656px;
+        height: 350px;
+    }
 }
+
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-    .people .post-content > ul > li{
-    width: 350px;
-  }
 
-  .people .post-content > ul > li:first-child {
-    margin-right: 50px;
-  }
-
-  .people .post-content > ul > li:nth-child(2n+3) {
-    /* nth-child is not as well supported as :first-child, thus limiting it to more rare cases */
-    margin-right: 50px;
-  }
-
-  main, nav, .row {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  
-  .contact iframe {
-    width: 100%; 
-    height: 450px;
-  }
-  
+@media only screen and (max-width: 992px) {
+    .people .post-content > ul > li {
+        width: auto;
+    }
+    .people .post-content > ul > li:first-child {
+        margin-right: 0px;
+    }
+    .people .post-content > ul > li:nth-child(2n+3) {
+        /* nth-child is not as well supported as :first-child, thus limiting it to more rare cases */
+        margin-right: 0px;
+    }
+    .contact iframe {
+        width: 100%;
+        height: 450px;
+    }
 }
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
 
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 768px) {
     .container>.navbar-collapse, .container>.navbar-header {
-      margin-left: 0;    
+        margin-left: 0;
     }
     .navbar-brand {
         padding-left: 0;
     }
-
-    .people .post-content > ul > li{
-        width: auto;   
+    .people .post-content > ul > li {
+        width: auto;
     }
-    
+    .people .post-content > ul > li:first-child {
+        margin-right: 0px;
+    }
     .contact iframe {
-        width: 100%; 
+        width: 100%;
         height: 400px;
     }
-
-   .post-content{
-        -webkit-columns: auto ;
+    .post-content {
+        -webkit-columns: auto;
         -moz-columns: auto;
         columns: auto;
     }
-    
 }
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (max-width : 480px) {
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
     .contact iframe {
-        width: 100%; 
+        width: 100%;
         height: 250px;
     }
 }
 
-/* Custom, iPhone Retina */ 
-@media only screen and (max-width : 320px) {
-    
-}
-    
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {}
+
+
 /*@media screen and (min-width: 500px) and (max-width: 800px) { ... }

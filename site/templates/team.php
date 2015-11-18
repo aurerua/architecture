@@ -1,10 +1,11 @@
 <?php snippet('header') ?>
 
-<div class="wrapper">
     
 <?php snippet('navigation') ?>
+<div class="wrapper">
 
- 
+     <main class="content" role="main">
+
 
     <div class="container post-header">
         <div class="row gutter-60">
@@ -23,7 +24,6 @@
     </div>
     
 
-    <main class="content" role="main">
         <div class="container post people">
             <div class="row gutter-60">
                 <div class="col-md-4">

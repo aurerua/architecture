@@ -4,6 +4,8 @@
 
 <div class="wrapper">
 
+    <main class="content" role="main">
+        
     <div class="container post-header">
         <div class="row gutter-60">
             <div class="col-md-4">
@@ -37,7 +39,6 @@
     </div>
 
 
-    <main class="content" role="main">
         <div class="container post">
 
             <div class="row gutter-60">
