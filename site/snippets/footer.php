@@ -1,11 +1,11 @@
 
 
 <footer class="footer">
+   <?php if($page->url() != $site->url()."/impressum"): ?>
     <div class="container">
-      <!--<div class="row">-->
         <div class="impressum"><a href="<?php echo $site->url()."/impressum" ?>">Impressum</a></div>
-      <!--</div>-->
     </div>
+    <?php endif ?>
 </footer>
 
 <!-- Third party js files -->
