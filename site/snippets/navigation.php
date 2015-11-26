@@ -17,7 +17,19 @@ if($items->count()):
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo kirby()->urls()->index() ?>/"><h1><?php echo html($site->title()) ?></h1></a>
+      <a class="navbar-brand" href="<?php echo kirby()->urls()->index() ?>/">
+        <h1>
+          <?php 
+            // If an image logo.png can be found in the assets/ directory, use it, 
+            // otherwise display the title of the site.
+            if (@getimagesize(kirby()->roots()->assets() . "/images/logo.png")): 
+          ?>
+            <img src="<?php echo kirby()->urls()->index() ?>/assets/images/logo.png" alt="<?php echo html($site->title()) ?>">
+          <?php else: ?>
+            <?php echo html($site->title()) ?>
+          <?php endif ?>
+        </h1>
+      </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

@@ -31,18 +31,7 @@
       head.appendChild(trial);
     })();
   </script>
-  <script type="text/javascript">
-    (function() {
-      var path = '//easy.myfonts.net/v2/js?sid=173679(font-family=PF+Din+Text+Pro+Thin)&sid=173743(font-family=PF+Din+Text+Pro+Regular)&sid=173744(font-family=PF+Din+Text+Pro+Medium)&sid=173780(font-family=PF+Din+Text+Pro+Light)&key=9mnMplfvyE',
-        protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-        trial = document.createElement('script');
-      trial.type = 'text/javascript';
-      trial.async = true;
-      trial.src = protocol + path;
-      var head = document.getElementsByTagName("head")[0];
-      head.appendChild(trial);
-    })();
-  </script>
+
   <!-- Bootstrap -->
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

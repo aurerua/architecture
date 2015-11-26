@@ -245,10 +245,6 @@ table {
 /*font-family: 'Proxima Nova SemiBold'*/
 /*font-family: 'Proxima Nova Light'*/
 /*font-family: 'Proxima Nova Medium'*/
-/*font-family: 'PF Din Text Pro Regular'*/
-/*font-family: 'PF Din Text Pro Medium'*/
-/*font-family: 'PF Din Text Pro Light'*/
-/*font-family: 'PF Din Text Pro Thin'*/
 
 /* Tips: http://stackoverflow.com/questions/18740757/using-a-different-font-with-twitter-bootstrap */
 
@@ -276,7 +272,7 @@ html {
 
 h1 {
     margin: 0;
-    font-family: 'PF Din Text Pro Regular', sans-serif;
+    font-family: sans-serif;
     color: #4D5377;
 }
 
@@ -342,6 +338,10 @@ a:focus {
     /*overflow: hidden;*/
 }
 
+h1 img {
+    vertical-align: top;
+    height: 0.75em;
+}
 
 /* ==========================================================================
    4. Navbar
