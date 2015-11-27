@@ -1,6 +1,7 @@
 # Architecture - A website built with [Kirby](http://getkirby.com/) 
 
 ![Architecture Screenshot](https://www.dropbox.com/s/0xufdordo14cg0k/architecture.png?raw=1)
+Design: Johan Wagner
 
 ## Structure
 
