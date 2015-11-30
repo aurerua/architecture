@@ -59,7 +59,7 @@ template {
 }
 
 html {
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
@@ -240,12 +240,6 @@ table {
    1. Fonts and colors
    ========================================================================== */
 
-
-/*font-family: 'Proxima Nova Regular'*/
-/*font-family: 'Proxima Nova SemiBold'*/
-/*font-family: 'Proxima Nova Light'*/
-/*font-family: 'Proxima Nova Medium'*/
-
 /* Tips: http://stackoverflow.com/questions/18740757/using-a-different-font-with-twitter-bootstrap */
 
 /* Blue: #4D5377 */
@@ -267,12 +261,12 @@ body {
 }
 
 html {
-    font-family: 'Proxima Nova Regular', sans-serif;
+    font-family: sans-serif;
 }
 
 h1 {
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #4D5377;
 }
 
@@ -281,7 +275,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Proxima Nova Regular', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 h2 {
@@ -292,7 +286,7 @@ h2 {
 p,
 div,
 a {
-    font-family: 'Proxima Nova Regular', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -580,7 +574,7 @@ h1 img {
 .post-title {
     font-size: 1em;
     margin: 0;
-    font-family: 'Proxima Nova Regular'
+    font-family: 'Lato'
 }
 
 .post h1 {

@@ -18,19 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 
-  <!--<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />-->
-  <script type="text/javascript">
-    (function() {
-      var path = '//easy.myfonts.net/v2/js?sid=148510(font-family=Proxima+Nova+Regular)&sid=148547(font-family=Proxima+Nova+SemiBold)&sid=148550(font-family=Proxima+Nova+Light)&sid=270169(font-family=Proxima+Nova+Medium)&key=qH0NHpdka5',
-        protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-        trial = document.createElement('script');
-      trial.type = 'text/javascript';
-      trial.async = true;
-      trial.src = protocol + path;
-      var head = document.getElementsByTagName("head")[0];
-      head.appendChild(trial);
-    })();
-  </script>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
 
   <!-- Bootstrap -->
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
