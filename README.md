@@ -2,6 +2,8 @@
 
 ![Architecture Screenshot](https://www.dropbox.com/s/0xufdordo14cg0k/architecture.png?raw=1)
 
+Design: Johan Wagner | Web implementation: Aurelien Giraud | Used online at: [graat.de](http://www.graat.de).
+
 ## Structure
 
 - A Home page
