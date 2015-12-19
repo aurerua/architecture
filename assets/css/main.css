@@ -585,6 +585,7 @@ h1 img {
 h2.post-title {
     text-transform: lowercase;
     margin-top: 0.8em;
+    text-align: right;
 }
 
 .post-title a {
