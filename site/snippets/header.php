@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-
+<?php header('Content-type: text/html; charset=utf-8'); ?>
 <head>
 
   <meta charset="utf-8" />
