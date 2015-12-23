@@ -774,17 +774,31 @@ body > nav {
 /* Small Devices, Tablets */
 
 @media only screen and (max-width: 768px) {
-    .container>.navbar-collapse, .container>.navbar-header {
-        margin-left: 0;
-    }
-    .navbar-brand {
-        padding-left: 0;
-    }
+    /*.container>.navbar-collapse, .container>.navbar-header {*/
+    /*    margin-left: 0;*/
+    /*}*/
+    /*.navbar-brand {*/
+    /*    padding-left: 0;*/
+    /*}*/
+
     .container>.navbar-header {
         margin-right: 0px;
     }
-    
-
+    .navbar-right {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 30px;
+    }
+    button.navbar-toggle {
+        margin-right: 28px;
+    }
+    .navbar-right li, .navbar-right li:first-child, .navbar-right li:last-child {
+        float:none;
+        text-align: left;
+    }
+    .navbar-collapse {
+        border-bottom: solid #e7e7e7 1px;
+    }
     .people .post-content > ul > li {
         width: auto;
     }
