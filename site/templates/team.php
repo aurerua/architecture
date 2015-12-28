@@ -14,9 +14,7 @@
             <div class="col-md-8">
                 <header>
                   <?php foreach($page->images() as $image): ?>
-                    <a href="<?php echo $image->url() ?>">
                       <img class="img-responsive" src="<?php echo $image->url() ?>" alt="">
-                    </a>
                   <?php endforeach ?>
                 </header>
             </div>
