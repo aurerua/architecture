@@ -654,7 +654,7 @@ body > nav {
 
 /* Large Devices, Wide Screens */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
     
     .navbar-right {
         width: 293.328px;
@@ -678,7 +678,7 @@ body > nav {
 
 /* Medium Devices, Desktops */
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
     
     .row:first-child {
         margin-bottom: 0px;
@@ -713,7 +713,7 @@ body > nav {
 
 /* Small Devices, Tablets */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
     .container>.navbar-header {
         margin-right: 0px;
@@ -753,7 +753,7 @@ body > nav {
 
 /* Extra Small Devices, Phones */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
     
     .contact iframe {
         width: 100%;
