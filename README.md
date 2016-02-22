@@ -19,8 +19,9 @@ Design: Johan Wagner | Web implementation: Aurelien Giraud | Demo: [c9.io/aureru
 - Touch Gestures on the Carousel thanks to [Hammer.js](http://hammerjs.github.io/)
 
 ## Quick Start Install
-
-$ git clone --recursive https://github.com/aurerua/architecture.git
+```
+git clone --recursive https://github.com/aurerua/architecture.git
+```
 
 ## Kirby Requirements
 
